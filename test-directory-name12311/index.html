@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample Test Page</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f3f6fb; color: #172033; }
+    main { width: min(90vw, 560px); padding: 2rem; border-radius: 16px; background: white; box-shadow: 0 12px 36px #17203318; }
+    h1 { margin-top: 0; }
+    button { border: 0; border-radius: 8px; padding: .75rem 1rem; background: #2357d8; color: white; font: inherit; cursor: pointer; }
+    button:hover { background: #1945b5; }
+    #result { min-height: 1.5em; color: #28623b; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Sample Test Page index</h1>
+    <p>This is a simple HTML page to confirm that your file opens and basic styling works.</p>
+    <button id="testButton" type="button">Run test</button>
+    <p id="result" aria-live="polite"></p>
+  </main>
+  <script>
+    document.getElementById('testButton').addEventListener('click', () => {
+      document.getElementById('result').textContent = 'Success! JavaScript is working.';
+    });
+  </script>
+</body>
+</html>
