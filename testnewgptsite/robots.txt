@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://business-video-production-guide.windyhorn.chatgpt.site/sitemap.xml
